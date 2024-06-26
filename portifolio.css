@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    height: 100%;
+    background-color: pink;
+}
+
+
+.navbar {
+    padding: 15px !important;
+}  
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 0px !important;
+}
+
+#inicio {
+    margin-top: 75px;
+}
+
+.fonte_google {
+    font-family: "Satisfy", cursive, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: palevioletred;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+
+p {
+    text-align: justify;
+    text-indent: 1px;
+    padding: 5px;
+    margin-bottom: 5px !important;
+}
+
+.paragrafo {
+    margin-bottom: 20px !important;
+}
+
+
+.fotoKarol {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.programmer {
+    display: block;
+    margin: auto;
+    
+}
+
+@media (min-width: 450px){
+
+    .programmer {
+        padding: 10px 50px 10px 50px;
+        margin-top: 20px;
+    }
+}
+
+button {
+    text-align: center;
+    border-radius: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+h2 {
+    text-align: center;
+    color: palevioletred;
+    padding-bottom: 20px !important;
+}
+
+h5, h6 {
+    text-align: center;
+}
+
+h5 {
+    margin-top: 10px !important;
+}
+
+#imgjavascript, #net, #server, #html, #css, #git {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 40px;
+} 
+
+.botao {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    align-content: center; 
+}
+
+.projetos {
+    margin: 50px;
+}
+
+footer {
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+#rodape {
+    text-align: center;
+}
+
+/* centralizar os icones de rede social */
+#centralizarIcones {
+    position: relative;          
+    display: inline-block;       
+    left: 50%;                  
+    transform: translate(-300%);
+    margin: 10px;
+} 
+
+@media (max-width: 475px) {
+    .imagem {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 30px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .apresentacao {
+        margin-bottom: 40px;
+    }
+
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .programmer {
+        margin-top: -50px !important;
+    }
+    
+}
+
+/* deixar menu fixo quando for em um pc */
+ @media(min-width: 768px) {
+    .menu {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 1;
+    }
+} 
+
+/* espaçamento no card */
+.card {
+    margin-inline: 1.5rem;
+    margin-block: 1.5rem;
+}     
+
+.projetoSolo {
+    margin-right: 50px;
+}
+
+
+
