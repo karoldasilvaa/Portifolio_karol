@@ -45,6 +45,10 @@ p {
     margin-bottom: 5px !important;
 }
 
+.paragrafoHabilidades {
+    font-size: small;
+} 
+
 .paragrafo {
     margin-bottom: 20px !important;
 }
@@ -76,7 +80,7 @@ p {
 
 button {
     text-align: center;
-    border-radius: 10px;
+    margin-top: 10px !important;
 }
 
 button:hover {
