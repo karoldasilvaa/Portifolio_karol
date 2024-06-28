@@ -19,6 +19,18 @@
     <div class="menu">
         <!-- => fixed-top  deixar menu fixo -->
 
+        <!-- nav div div a {
+            display: block;
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            transition: 0.2s;
+            padding: 5px 8px;
+            margin: -20px;
+        } -->
+
         <nav class=" navbar navbar-expand-lg navbar-light ">
             <!-- <a class="navbar-brand nav-item nav-link active" href="#inicio">INÍCIO</a> -->
              <img class="imgMenu" src="img/imgMenu.jpg" alt="">
@@ -27,12 +39,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- justify-content-end trocar menu de lado -->
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+            <div id="menu" class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div id="animaçãoLinkMenu" class="navbar-nav">
+                    <a class="nav-item nav-link" href="#inicio">INÍCIO</a>
                     <a class="nav-item nav-link" href="#sobreMim">SOBRE MIM<span class="sr-only"></span></a>
                     <a class="nav-item nav-link" href="#conhecimentos">HABILIDADES</a>
                     <a class="nav-item nav-link" href="#projetos">PROJETOS</a>
-                    <a class="nav-item nav-link" href="#contatos">CONTATOS</a>
                 </div>
             </div>
         </nav>
@@ -44,7 +56,7 @@
                 <img class="programmer img-fluid" src="img/Developer-Girls.png" alt="">
             </div>
             <div class="apresentacao col-sm-12 col-lg-6">
-                <h3 class="fonte_google">Olá, eu sou</h3>
+                <h3 id="marginFonteGoogle" class="fonte_google">Olá, eu sou</h3>
                 <h1 class="fonte_google">Karoline Santana</h1>
                 <a href="https://br.linkedin.com/" target="_blank" ><button class="botao">Linkedin</button></a>
             </div>
@@ -53,17 +65,14 @@
         <div id="sobreMim" style="scroll-margin-top: 115px;">
             <img class="fotoKarol" src="img/karol.jpg" alt="">
             <h2>Um pouco sobre mim</h2>
-            <p class="paragrafo">Sou Karoline, estudo análise e desenvolvimento de sistemas, estou no 4° semestre
-                do Centro universitário Eniac, tenho 25 anos conhecia a tecnologia mas não comhecia a programação,
-                quando conheci resolvi me aventurar estudei pela internet para ver se ia gostar para poder entrar na
-                faculdade
-                e como gostei hoje estou aqui, aprendendo cada dia mais.</p>
+            <p class="paragrafo">Sou Karoline Santana, estudo análise e desenvolvimento de sistemas, estou no 4° semestre do Centro universitário Eniac, conheci a programação e resolvi me aventurar estudei pela internet, depois entrei na faculdade e hoje estou aqui aprendendo cada dia mais. Estou criando esta página web para mostrar um pouco do meu trabalho. Espero que goste dos meus projetos, é um prazer ter você por aqui!
+            </p>
         </div>
 
 
         <div id="conhecimentos" style="scroll-margin-top: 115px;">
             <h2>Meus Conhecimentos</h2>
-            <div class="row">
+            <div id="bordaConhecimentos" class="row">
                 <div class="col-sm-12 col-lg-2"><img class="imagem" id="html" src="img/html.webp" alt=""></div>
                 <div class="col-sm-12 col-lg-10">
                     <h5>HTML</h5>
@@ -76,7 +85,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div id="bordaConhecimentos" class="row">
             <div class="col-sm-12 col-lg-2"><img class="imagem" id="css" src="img/css.webp" alt=""></div>
             <div class="col-sm-12 col-lg-10">
                 <h5>CSS</h5>
@@ -86,7 +95,7 @@
             </div>
         </div>
 
-        <div class="row ">
+        <div id="bordaConhecimentos" class="row ">
             <div class="col-sm-12 col-lg-2"><img class="imagem" id="css" src="img/bootstrap.jpg" alt=""></div>
             <div class="col-sm-12 col-lg-10">
                 <h5>Bootstrap</h5>
@@ -97,7 +106,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div id="bordaConhecimentos" class="row">
             <div class="col-sm-12 col-lg-2"><img class="imagem" id="imgjavascript" src="img/javascript.png" alt="">
             </div>
             <div class="col-sm-12 col-lg-10">
@@ -108,7 +117,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div id="bordaConhecimentos" class="row">
             <div class="col-sm-12 col-lg-2"><img class="imagem" id="net" src="img/net.webp" alt=""></div>
             <div class="col-sm-12 col-lg-10">
                 <h5>C#</h5>
@@ -119,7 +128,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div id="bordaConhecimentos" class="row">
             <div class="col-sm-12 col-lg-2"><img class="imagem" id="server" src="img/server.jpg" alt=""></div>
             <div class="col-sm-12 col-lg-10">
                 <h5>SQL Server</h5>
@@ -130,7 +139,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div id="bordaConhecimentos" class="row">
             <div class="col-sm-12 col-lg-2"><img class="imagem" id="git" src="img/githubBlack.png" alt=""></div>
             <div class="col-sm-12 col-lg-10">
                 <h5>GitHub</h5>
@@ -140,34 +149,33 @@
             </div>
         </div>
         </div>
-    </main>
 
-    <div id="projetos" style="scroll-margin-top: 115px;">
+        <div id="projetos" style="scroll-margin-top: 115px;">
          <h2>Meus Projetos</h2> 
 
         <div class="row justify-content-center">
             
-            <div class="card col-4" style="width: 18rem; height: 22rem;">
-                <img class="card-img-top imgProjetos" src="img/gimpApi.png" alt="Card image cap">
-                <div class="card-body">
+            <div class="card col-4 mudarImg" style="width: 18rem; height: 22rem;">
+                <img class="card-img-top" src="img/gimpApi.png" alt="Card image cap">
+                <div id="cardProjeto" class="card-body">
                     <h6 class="card-title">Api Desenvolvida em C#</h6>
                     <p class="card-text paragrafoHabilidades">API desenvolvido em C# no Visual Studio com as 4 operações  CRUD: Get, Post, Put, Delete, utilizando o banco de dados SQL Server.</p>
                     <a href="https://github.com/karoldasilvaa/AplicativoAjuda"><button class="botao">Ver Projeto</button></a>
                 </div>
             </div>
 
-            <div class="card col-4" style="width: 18rem; height: 22rem;">
-                <img class="card-img-top imgProjetos" src="img/gimpBouchic.png" alt="Card image cap">
-                <div class="card-body">
+            <div class="card col-4 mudarImg" style="width: 18rem; height: 22rem;">
+                <img class="card-img-top" src="img/gimpBouchic.png" alt="Card image cap">
+                <div id="cardProjeto" class="card-body">
                     <h6 class="card-title">Site com Api em C#</h6>
                     <p class="card-text paragrafoHabilidades">Site responsivo com Api desenvolvida em C#, utilizando Banco de dados SqlServer, com as 4 operações CRUD, a Api é chamada utilizando a função ajax com Jquery .</p>
                     <a href="https://github.com/karoldasilvaa/Site_Bouchic"><button class="botao">Ver Projeto</button></a>
                 </div>
             </div>
 
-            <div class="card col-4" style="width: 18rem; height: 22rem;">
-                <img class="card-img-top imgProjetos" src="img/gimpCep.png" alt="Card image cap">
-                <div class="card-body">
+            <div class="card col-4 mudarImg" style="width: 18rem; height: 22rem;">
+                <img class="card-img-top" src="img/gimpCep.png" alt="Card image cap">
+                <div id="cardProjeto" class="card-body">
                     <h6 class="card-title">Login Cep com Api</h6>
                     <p class="card-text paragrafoHabilidades">Login para buscar o cep com Api pubica Via Cep, onde o usuário digita o cep e a Api buca os dados do cep, Api chamada pela função ajax em Jquery.</p>
                     <a href="https://github.com/karoldasilvaa/Site_Bouchic"><button class="botao">Ver Projeto</button></a>
@@ -177,19 +185,18 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="card col-4" style="width: 18rem; height: 22rem;">
-                <img class="card-img-top imgProjetos" src="img/gimpBanco.png" alt="Card image cap">
-                <div class="card-body">
+            <div class="card col-4 mudarImg" style="width: 18rem; height: 22rem;">
+                <img class="card-img-top" src="img/gimpBanco.png" alt="Card image cap">
+                <div id="cardProjeto" class="card-body">
                     <h6 class="card-title">SqlServer</h6>
-                    <p class="card-text paragrafoHabilidades">Banco de dados de loja de automóveis fictícia com tabelas, chaves
-                     primárias, estrangeiras e Inner Join no SQL Server.</p>
+                    <p class="card-text paragrafoHabilidades">Banco de dados de loja de automóveis fictícia com tabelas, chaves primárias, estrangeiras e Inner Join no SQL Server.</p>
                     <a href="https://github.com/karoldasilvaa/banco_de_dados_sql_server"><button class="botao">Ver Projeto</button></a>
                 </div>
             </div>
 
-            <div class="card col-4" style="width: 18rem; height: 22rem;">
-                <img class="card-img-top imgProjetos" src="img/gimpBomBolo.png" alt="Card image cap">
-                <div class="card-body">
+            <div class="card col-4 mudarImg" style="width: 18rem; height: 22rem;">
+                <img class="card-img-top" src="img/gimpBomBolo.png" alt="Card image cap">
+                <div id="cardProjeto" class="card-body">
                     <h6 class="card-title">Vendas de Bolo</h6>
                     <p class="card-text paragrafoHabilidades">Criado em 2022, esse foi meu segundo site com html, css,
                     javascript e media query.</p>
@@ -197,9 +204,9 @@
                 </div>
             </div>
 
-            <div class="card col-4" style="width: 18rem; height: 22rem;">
-                <img class="card-img-top  imgProjetos" src="img/gimpAndroid.png" alt="Card image cap">
-                <div class="card-body">
+            <div class="card col-4 mudarImg" style="width: 18rem; height: 22rem;">
+                <img class="card-img-top" src="img/gimpAndroid.png" alt="Card image cap">
+                <div id="cardProjeto" class="card-body">
                     <h6 class="card-title">Desafio Android</h6>
                     <p class="card-text paragrafoHabilidades">Meu primeiro projeto, criado em 2022 um site feito somente com
                     HTML e CSS.</p>
@@ -209,51 +216,57 @@
         </div>      
 
          <div class="row justify-content-center projetoSolo">
-            <div class="card" style="width: 18rem; height: 26rem;">
-                <img class="card-img-top imgProjetos" src="img/gimpaaplicativo.png" alt="Card image cap">
-                <div class="card-body">
+            <div class="card col-4 mudarImg" style="width: 18rem; height: 26rem;">
+                <img class="card-img-top" src="img/gimpaaplicativo.png" alt="Card image cap">
+                <div id="cardProjeto" class="card-body">
                     <h6 class="card-title">Aplicativo de Celular Android</h6>
                     <p class="card-text paragrafoHabilidades">Aplicativo celular utilizando Banco de Dados em nuvem, acesso com login, API do Google Maps  com botão emergência para mensagem </p>
                     <a href="https://github.com/karoldasilvaa/AplicativoAjuda"><button class="botao">Ver Projeto</button></a>
                 </div>
             </div>
 
-            <!-- <div class="col-6">
+            <div class="repositoriosGithub col-8">
                 <a href="https://github.com/karoldasilvaa?tab=repositories"><button class="botao">Repositórios no GitHub</button></a>
-            </div> -->
+            </div>
 
         </div>
     </div>
-
-    <div id="contatos" style="scroll-margin-top: 130px;">
-        <h2>Contatos</h2>
-
-        <div>
-                <div id="centralizarIcones">
-                <a href="https://www.google.com/intl/pt-BR/gmail/about/"><img
-                    src="img/gmailRedes.png"></a>
-                 </div>
-
-                <div id="centralizarIcones">
-                <a href="https://www.whatsapp.com/?lang=pt_BR"><img src="img/whatsappRedes.png"
-                    alt="whatsapp"></a>
-                </div>
-
-                 <div id="centralizarIcones">
-                <a href="https://github.com/"><img src="img/githubRedes.png" alt="github"></a>
-                </div>
-
-                <div id="centralizarIcones">
-                <a href="https://br.linkedin.com/"><img src="img/linkedinRedes.png" alt="linkedin"></a>
-                </div>
-        </div>
-        
-    </div>
+    </main>
 
     <footer>
-        <p id="rodape">&copy; 2024 Karoline Santana</p>
-    </footer>
+        <div class="row divFooter">
+            <p class="col-6 paragrafoFooter">&copy; 2024 Karoline Santana</p>
 
+            <a class="col-1 linhaVertical" href="https://www.google.com/intl/pt-BR/gmail/about/">
+                <picture>
+                  <source media="(max-width: 750px)" srcset="img/githubtest.png" tyoe="img/png">
+                  <img src="img/emailGimp.png" alt="gmail">
+                </picture>
+            </a>
+
+            <a class="col-1" href="https://br.linkedin.com/">
+                <picture>
+                  <source media="(max-width: 750px)" srcset="img/githubtest.png" tyoe="img/png">
+                  <img src="img/linkedinGimp.png"
+                alt="linkedin">
+                </picture>
+            </a>
+
+            <a class="col-1" href="https://www.whatsapp.com/?lang=pt_BR">
+                <picture>
+                  <source media="(max-width: 750px)" srcset="img/linkedintest.png" tyoe="img/png">
+                  <img src="img/whatsappGimp.png" alt="whatsapp">
+                </picture>
+            </a>
+
+            <a class="col-1" href="https://github.com/">
+                <picture>
+                  <source media="(max-width: 750px)" srcset="img/linkedintest.png" tyoe="img/png">
+                  <img src="img/githubGimp.png" alt="github">
+                </picture>
+            </a>
+        </div>  
+    </footer>
 </body>
 
 </html>

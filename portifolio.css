@@ -6,7 +6,7 @@ nav {
     text-align: center;
     font-weight: bold;
     height: 100%;
-    background-color: pink;
+    background: linear-gradient(to top, rgb(253, 226, 231), rgb(255, 192, 203));
 }
 
 
@@ -19,13 +19,28 @@ nav {
     margin-right: 25px;
 }
 
+/* nav div div a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    transition: 0.2s;
+} */
+
 main {
+    background-color: white;
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px 20px 0px 20px;
     margin-bottom: 0px !important;
+}
+
+.apresentacao>a, #cardProjeto>a, .repositoriosGithub>a {
+    text-decoration: none;
 }
 
 #inicio {
@@ -38,14 +53,16 @@ main {
     font-style: normal;
     text-align: center;
     color: palevioletred;
-    padding-top: 50px;
     font-size: 50px;
 }
 
+#marginFonteGoogle {
+    margin-top: 50px;
+}
 
 p {
     text-align: justify;
-    text-indent: 1px;
+    text-indent: 20px;
     padding: 5px;
     margin-bottom: 5px !important;
 }
@@ -53,11 +70,6 @@ p {
 .paragrafoHabilidades {
     font-size: small;
 } 
-
-.paragrafo {
-    margin-bottom: 20px !important;
-}
-
 
 .fotoKarol {
     display: block;
@@ -88,9 +100,15 @@ button {
     margin-top: 10px !important;
 }
 
-button:hover {
+button:hover, nav>#menu>#animaçãoLinkMenu>a:hover, #bordaConhecimentos:hover  {
     transform: scale(1.1);
     transition: all 0.5s;
+}
+
+/* passar o mouse a imagem ficar preta e branco */
+.mudarImg>img:hover{
+    filter: grayscale(1);
+    transition: .4s;
 }
 
 h2 {
@@ -113,7 +131,8 @@ h5 {
     margin-bottom: 40px;
 } 
 
-.botao {
+/* centralizar botão */
+.botao{
     display: flex;
     justify-content: center;
     margin: auto;
@@ -123,13 +142,41 @@ h5 {
     align-content: center; 
 }
 
+#bordaConhecimentos {
+ border: solid 4px rgb(253, 226, 231);
+ border-radius: 10px;
+ padding-top: 40px;
+ margin: 25px;
+}
+
 .projetos {
     margin: 50px;
 }
 
+ {
+    width: 50%;
+    height: 50px;
+    margin-top: 25% !important; 
+    padding: 10p.repositoriosGithub>a>buttonx;
+    background-color: rgb(253, 226, 231);
+    border: solid 4px rgb(253, 226, 231);
+    font-size: 18px;
+}
+
+
+/* espaçamento no card */
+.card {
+    margin-inline: 1.0rem;
+    margin-block: 1.0rem;
+    border: solid 4px rgb(253, 226, 231) !important;
+}     
+
+.projetoSolo {
+    margin-right: 50px;
+}
+
 footer {
-    margin: 10px 10px 10px 10px;
-    text-align: center;
+    background-color: rgb(253, 226, 231);
 }
 
 #rodape {
@@ -137,15 +184,15 @@ footer {
 }
 
 /* centralizar os icones de rede social */
-#centralizarIcones {
+/* #centralizarIcones {
     position: relative;          
     display: inline-block;       
     left: 50%;                  
     transform: translate(-300%);
     margin: 10px;
-} 
+}  */
 
-@media (max-width: 475px) {
+@media (max-width: 768px) {
     .imagem {
         display: flex;
         justify-content: center;
@@ -171,8 +218,13 @@ footer {
     
 }
 
-/* deixar menu fixo quando for em um pc */
  @media(min-width: 768px) {
+    /* deixar body colorido apenas no computador */
+    body{
+        background-color: rgb(253, 226, 231) !important;
+    }
+
+    /* deixar menu fixo quando for em um pc */
     .menu {
         position: fixed;
         top: 0px;
@@ -182,15 +234,36 @@ footer {
     }
 } 
 
-/* espaçamento no card */
-.card {
-    margin-inline: 1.5rem;
-    margin-block: 1.5rem;
-}     
-
-.projetoSolo {
-    margin-right: 50px;
+footer {
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: rgb(253, 226, 231);
+    margin: auto;
+    padding: 20px;
+    
 }
 
+.paragrafoFooter {
+    font-weight: bold;
+}
 
+.linhaVertical {
+    border-left: 2px solid black;
+    margin-left: 150px;
+}
 
+@media (max-width: 820px) {
+    .paragrafoFooter {
+        font-size: 13px;
+    }
+
+    .linhaVertical {
+        border-left: 2px solid black;
+        margin-left: 60px;
+    }
+    
+    .repositoriosGithub>a>button {
+        
+    }
+  
+} 
