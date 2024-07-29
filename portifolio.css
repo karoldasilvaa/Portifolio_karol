@@ -100,7 +100,7 @@ button {
     margin-top: 10px !important;
 }
 
-button:hover, nav>#menu>#animaçãoLinkMenu>a:hover, #bordaConhecimentos:hover  {
+button:hover, nav>#menu>#animaçãoLinkMenu>a:hover, .bordaConhecimentos:hover  {
     transform: scale(1.1);
     transition: all 0.5s;
 }
@@ -142,7 +142,11 @@ h5 {
     align-content: center; 
 }
 
-#bordaConhecimentos {
+#conhecimentos {
+    padding: 40px;
+}
+
+.bordaConhecimentos {
  border: solid 4px rgb(253, 226, 231);
  border-radius: 10px;
  padding-top: 40px;
@@ -166,13 +170,22 @@ h5 {
 
 /* espaçamento no card */
 .card {
-    margin-inline: 1.0rem;
-    margin-block: 1.0rem;
+    margin-inline: 0.9rem;
+    margin-block: 0.9rem;
     border: solid 4px rgb(253, 226, 231) !important;
 }     
 
-.projetoSolo {
-    margin-right: 50px;
+@media (min-width: 900px) {
+    .alinharTresCard {
+        display: flex;
+    }
+}
+
+@media (max-width: 899px) {
+    #projetos {
+        display: grid; 
+        place-items: center;
+    }
 }
 
 footer {
