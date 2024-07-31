@@ -19,16 +19,6 @@ nav {
     margin-right: 25px;
 }
 
-/* nav div div a {
-    display: block;
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 1.2rem;
-    transition: 0.2s;
-} */
-
 main {
     background-color: white;
     min-width: 300px;
@@ -83,16 +73,7 @@ p {
 
 .programmer {
     display: block;
-    margin: auto;
-    
-}
-
-@media (min-width: 450px){
-
-    .programmer {
-        padding: 10px 50px 10px 50px;
-        margin-top: 20px;
-    }
+    margin: auto;  
 }
 
 button {
@@ -157,36 +138,12 @@ h5 {
     margin: 50px;
 }
 
- {
-    width: 50%;
-    height: 50px;
-    margin-top: 25% !important; 
-    padding: 10p.repositoriosGithub>a>buttonx;
-    background-color: rgb(253, 226, 231);
-    border: solid 4px rgb(253, 226, 231);
-    font-size: 18px;
-}
-
-
 /* espaçamento no card */
 .card {
     margin-inline: 0.9rem;
     margin-block: 0.9rem;
     border: solid 4px rgb(253, 226, 231) !important;
-}     
-
-@media (min-width: 900px) {
-    .alinharTresCard {
-        display: flex;
-    }
-}
-
-@media (max-width: 899px) {
-    #projetos {
-        display: grid; 
-        place-items: center;
-    }
-}
+}   
 
 footer {
     background-color: rgb(253, 226, 231);
@@ -205,7 +162,49 @@ footer {
     margin: 10px;
 }  */
 
-@media (max-width: 768px) {
+footer {
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: rgb(253, 226, 231);
+    margin: auto;
+    padding: 20px;
+}
+
+.paragrafoFooter {
+    font-weight: bold;
+}
+
+.linhaVertical {
+    border-left: 2px solid black;
+    margin-left: 150px;
+}
+
+/* colocar espaçamento na imagem  */
+@media (min-width: 450px){
+
+    .programmer {
+        padding: 10px 50px 10px 50px;
+        margin-top: 20px;
+    }
+} 
+
+/* colocar os card lado a lado quando estiver em um computador */
+@media (min-width: 900px) {
+    .alinharTresCard {
+        display: flex;
+    }
+}
+
+/* centralizer os cards quando diminuir a tela */
+@media (max-width: 899px) { 
+    #projetos {
+        display: grid; 
+        place-items: center;
+    }
+} 
+
+/* centralizar imagem das habilidades quando diminuir a tela */
+@media (max-width: 991px) {
     .imagem {
         display: flex;
         justify-content: center;
@@ -213,11 +212,12 @@ footer {
         margin-top: 30px !important;
         margin-bottom: 10px !important;
     }
+}
 
+@media (max-width: 768px) {
     .apresentacao {
         margin-bottom: 40px;
     }
-
 
     .botao {
         display: flex;
@@ -228,10 +228,9 @@ footer {
     .programmer {
         margin-top: -50px !important;
     }
-    
 }
 
- @media(min-width: 768px) {
+ @media(min-width: 825px) {
     /* deixar body colorido apenas no computador */
     body{
         background-color: rgb(253, 226, 231) !important;
@@ -247,24 +246,6 @@ footer {
     }
 } 
 
-footer {
-    min-width: 300px;
-    max-width: 1000px;
-    background-color: rgb(253, 226, 231);
-    margin: auto;
-    padding: 20px;
-    
-}
-
-.paragrafoFooter {
-    font-weight: bold;
-}
-
-.linhaVertical {
-    border-left: 2px solid black;
-    margin-left: 150px;
-}
-
 @media (max-width: 820px) {
     .paragrafoFooter {
         font-size: 13px;
@@ -274,9 +255,19 @@ footer {
         border-left: 2px solid black;
         margin-left: 60px;
     }
-    
-    .repositoriosGithub>a>button {
-        
-    }
-  
 } 
+
+/* colocar o botão repositorio no centro  */
+@media (min-width:850px) {
+    #divRepositoriosGithubExterna {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #botaoRepositorios {
+        width: 200px;
+        border-radius: 10px;
+        margin-left: 50%;
+    }
+}
