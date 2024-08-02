@@ -113,14 +113,15 @@ h5 {
 } 
 
 /* centralizar botão */
-.botao{
-    display: flex;
+.botao {
+     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px !important;
+    margin-bottom: 25px !important; 
+    padding: 5px;
     border-radius: 10px;
-    align-content: center; 
+    align-content: center;
 }
 
 #conhecimentos {
@@ -174,11 +175,6 @@ footer {
     font-weight: bold;
 }
 
-.linhaVertical {
-    border-left: 2px solid black;
-    margin-left: 150px;
-}
-
 /* colocar espaçamento na imagem  */
 @media (min-width: 450px){
 
@@ -190,7 +186,7 @@ footer {
 
 /* colocar os card lado a lado quando estiver em um computador */
 @media (min-width: 900px) {
-    .alinharTresCard {
+    .alinharTresCard, .juntarCardEBotao  {
         display: flex;
     }
 }
@@ -245,29 +241,41 @@ footer {
         z-index: 1;
     }
 } 
-
-@media (max-width: 820px) {
-    .paragrafoFooter {
-        font-size: 13px;
-    }
-
-    .linhaVertical {
-        border-left: 2px solid black;
-        margin-left: 60px;
-    }
-} 
-
 /* colocar o botão repositorio no centro  */
 @media (min-width:850px) {
     #divRepositoriosGithubExterna {
         align-items: center;
         display: flex;
         justify-content: center;
-    }
-
-    #botaoRepositorios {
-        width: 200px;
-        border-radius: 10px;
-        margin-left: 50%;
+        margin-left: 25%;
+        
     }
 }
+
+
+/* Media para o Footer */
+@media (min-width: 769px) {
+    .linhaVertical {
+        border-left: 2px solid black;
+        margin-left: 150px;
+    }
+
+    /* Juntar as imagens do footer com o texto quando aumentar a tela */
+    .divFooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    #imagemFooter {
+        display: flex;
+        justify-content: right;
+        
+    } 
+}
+
+@media (max-width: 769px){
+    
+}
+
+
