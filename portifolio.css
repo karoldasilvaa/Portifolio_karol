@@ -81,7 +81,8 @@ button {
     margin-top: 10px !important;
 }
 
-button:hover, nav>#menu>#animaçãoLinkMenu>a:hover, .bordaConhecimentos:hover  {
+
+button:hover, .animaçãoLinkMenu>a:hover, .bordaConhecimentos:hover  {
     transform: scale(1.1);
     transition: all 0.5s;
 }
@@ -114,7 +115,7 @@ h5 {
 
 /* centralizar botão */
 .botao {
-     display: flex;
+    display: flex;
     justify-content: center;
     margin: auto;
     margin-top: 20px !important;
@@ -122,6 +123,11 @@ h5 {
     padding: 5px;
     border-radius: 10px;
     align-content: center;
+    background-color: rgb(253, 226, 231);
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #conhecimentos {
@@ -261,7 +267,7 @@ footer {
     }
 
     /* Juntar as imagens do footer com o texto quando aumentar a tela */
-    .divFooter{
+    .divFooter {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -274,8 +280,17 @@ footer {
     } 
 }
 
-@media (max-width: 769px){
-    
+@media (max-width: 769px) {
+    #paragrafoFooter, #imagemFooter {
+        margin: 0 auto;
+        width: 75%;
+        margin-left: 25%;
+        padding: 0px;
+    }
+
+    #imagemFooter{
+        margin-left: 28%;
+    }
 }
 
 

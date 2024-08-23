@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="portifolio.css">
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -27,29 +29,38 @@
             text-transform: capitalize;
             font-size: 1.2rem;
             transition: 0.2s;
+
             padding: 5px 8px;
             margin: -20px;
         } -->
-
-        <nav class=" navbar navbar-expand-lg navbar-light ">
-            <!-- <a class="navbar-brand nav-item nav-link active" href="#inicio">INÍCIO</a> -->
-             <img class="imgMenu" src="img/imgMenu.jpg" alt="">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- justify-content-end trocar menu de lado -->
-            <div id="menu" class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div id="animaçãoLinkMenu" class="navbar-nav">
-                    <a class="nav-item nav-link" href="#inicio">INÍCIO</a>
-                    <a class="nav-item nav-link" href="#sobreMim">SOBRE MIM<span class="sr-only"></span></a>
-                    <a class="nav-item nav-link" href="#conhecimentos">HABILIDADES</a>
-                    <a class="nav-item nav-link" href="#projetos">PROJETOS</a>
-                </div>
-            </div>
-        </nav>
+            
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="imgMenu" src="img/imgMenu.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- justify-content-end trocar menu de lado  -->
+          <div class="collapse navbar-collapse animaçãoLinkMenu" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio">INÍCIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#sobreMim">SOBRE MIM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#conhecimentos">HABILIDADES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#projetos">PROJETOS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-
+    
     <main>
         <div id="inicio" class="row" style="scroll-margin-top: 130px;">
             <div class="col-sm-12 col-lg-6">
@@ -159,7 +170,7 @@
                     <div id="cardProjeto" class="card-body">
                         <h6 class="card-title">Api Desenvolvida em C#</h6>
                         <p class="card-text paragrafoHabilidades">API desenvolvido em C# no Visual Studio com as 4 operações  CRUD: Get, Post, Put, Delete, utilizando o banco de dados SQL Server.</p>
-                        <a href="https://github.com/karoldasilvaa/AplicativoAjuda"><button class="botao">Ver Projeto</button></a>
+                        <a href="https://github.com/karoldasilvaa/AplicativoAjuda" target="_blank"><button class="botao">Ver Projeto</button></a>
                     </div>
                 </div>
 
@@ -168,7 +179,7 @@
                     <div id="cardProjeto" class="card-body">
                         <h6 class="card-title">Site com Api em C#</h6>
                         <p class="card-text paragrafoHabilidades">Site responsivo com Api desenvolvida em C#, utilizando Banco de dados SqlServer, com as 4 operações CRUD, a Api é chamada utilizando a função ajax com Jquery .</p>
-                        <a href="https://github.com/karoldasilvaa/Site_Bouchic"><button class="botao">Ver Projeto</button></a>
+                        <a href="https://github.com/karoldasilvaa/Site_Bouchic" target="_blank"><button class="botao">Ver Projeto</button></a>
                     </div>
                 </div>
 
@@ -177,7 +188,7 @@
                     <div id="cardProjeto" class="card-body">
                         <h6 class="card-title">Login Cep com Api</h6>
                         <p class="card-text paragrafoHabilidades">Login para buscar o cep com Api pubica Via Cep, onde o usuário digita o cep e a Api buca os dados do cep, Api chamada pela função ajax em Jquery.</p>
-                        <a href="https://github.com/karoldasilvaa/Site_Bouchic"><button class="botao">Ver Projeto</button></a>
+                        <a href="https://github.com/karoldasilvaa/Site_Bouchic" target="_blank"><button class="botao">Ver Projeto</button></a>
                     </div>
                 </div>
             </div>
@@ -188,7 +199,7 @@
                     <div id="cardProjeto" class="card-body">
                         <h6 class="card-title">SqlServer</h6>
                         <p class="card-text paragrafoHabilidades">Banco de dados de loja de automóveis fictícia com tabelas, chaves primárias, estrangeiras e Inner Join no SQL Server.</p>
-                        <a href="https://github.com/karoldasilvaa/banco_de_dados_sql_server"><button class="botao">Ver Projeto</button></a>
+                        <a href="https://github.com/karoldasilvaa/banco_de_dados_sql_server" target="_blank"><button class="botao">Ver Projeto</button></a>
                     </div>
                 </div>
            
@@ -198,7 +209,7 @@
                         <h6 class="card-title">Vendas de Bolo</h6>
                         <p class="card-text paragrafoHabilidades">Criado em 2022, esse foi meu segundo site com html, css,
                         javascript e media query.</p>
-                        <a href="https://github.com/karoldasilvaa/Bom_bolo"><button class="botao">Ver Projeto</button></a>
+                        <a href="https://github.com/karoldasilvaa/Bom_bolo" target="_blank"><button class="botao">Ver Projeto</button></a>
                     </div>
                 </div>
 
@@ -208,25 +219,25 @@
                         <h6 class="card-title">Desafio Android</h6>
                         <p class="card-text paragrafoHabilidades">Meu primeiro projeto, criado em 2022 um site feito somente com
                         HTML e CSS.</p>
-                        <a href="https://github.com/karoldasilvaa/desafio-android"><button class="botao">Ver Projeto</button></a>
+                        <a href="https://github.com/karoldasilvaa/desafio-android" target="_blank"><button class="botao">Ver Projeto</button></a>
                     </div>
                 </div>
             </div>
 
             <div class="juntarCardEBotao">
-                <div class="card" id="teste" style="width: 18rem; height: 28rem;">
+                <div class="card"style="width: 18rem; height: 28rem;">
                     <img class="card-img-top" src="img/gimpaaplicativo.png" alt="Card image cap">
                     <div id="cardProjeto" class="card-body">
                         <h6 class="card-title">Aplicativo de Celular Android</h6>
                         <p class="card-text paragrafoHabilidades">Aplicativo celular utilizando Banco de Dados em nuvem, acesso com login, API do Google Maps  com botão emergência para mensagem </p>
-                        <a href="https://github.com/karoldasilvaa/AplicativoAjuda"><button class="botao">Ver Projeto</button></a>
+                        <a href="https://github.com/karoldasilvaa/AplicativoAjuda" target="_blank"><button class="botao">Ver Projeto</button></a>
                     </div>
                 </div>
 
                 <!-- class="col-md-6 col-lg-6" -->
                 <div  id="divRepositoriosGithubExterna">
                     <div class="repositoriosGithub">
-                        <a href="https://github.com/karoldasilvaa?tab=repositories"><button class="botao">Repositórios no GitHub</button></a>
+                        <a href="https://github.com/karoldasilvaa?tab=repositories" target="_blank"><button class="botao">Repositórios no GitHub</button></a>
                     </div>
                 </div>
             </div>
@@ -239,33 +250,29 @@
                 <p id="paragrafoFooter">&copy; 2024 Karoline Santana</p>
             <!-- col-lg-6 col-md-6 col-sm-6 col-xs-12 -->
             <div class="linhaVertical" id="imagemFooter">
-                <a href="https://www.google.com/intl/pt-BR/gmail/about/">
-                    <picture>
-                      <source media="(max-width: 750px)" srcset="img/githubtest.png" tyoe="img/png">
+                <a href="mailto:karol071298@gmail.com" target="_blank">
+
+                      <!-- Quando estiver em uma tela montrar uma imagem quando diminuir a tela mostrar outra menor, vai trocar a img por outra só que menor -->
+
+                     <!-- <picture>
+                     <source media="(max-width: 750px)" srcset="img/githubtest.png" tyoe="img/png">
                       <img src="img/emailGimp.png" alt="gmail">
-                    </picture>
+                     </picture> -->
+
+                    <img src="img/emailGimp.png" alt="gmail">
                 </a>
 
-                <a href="https://br.linkedin.com/">
-                    <picture>
-                      <source media="(max-width: 750px)" srcset="img/githubtest.png" tyoe="img/png">
-                      <img src="img/linkedinGimp.png"
+                <a href="https://br.linkedin.com/" target="_blank">
+                    <img src="img/linkedinGimp.png"
                     alt="linkedin">
-                    </picture>
                 </a>
 
-                <a href="https://www.whatsapp.com/?lang=pt_BR">
-                    <picture>
-                      <source media="(max-width: 750px)" srcset="img/linkedintest.png" tyoe="img/png">
-                      <img src="img/whatsappGimp.png" alt="whatsapp">
-                    </picture>
+                <a href="https://wa.me/5511949128729?text=" target="_blank">
+                    <img src="img/whatsappGimp.png" alt="whatsapp">
                 </a>
 
-                <a class="col-lg-1 col-md-1 col-sm-3" href="https://github.com/">
-                    <picture>
-                      <source media="(max-width: 750px)" srcset="img/linkedintest.png" tyoe="img/png">
-                      <img src="img/githubGimp.png" alt="github">
-                    </picture>
+                <a class="col-lg-1 col-md-1 col-sm-3" href="https://github.com/" target="_blank">
+                    <img src="img/githubGimp.png" alt="github">
                 </a>
             </div>
         </div>  
